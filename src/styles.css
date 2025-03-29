@@ -1,0 +1,118 @@
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.project {
+    position: relative;
+    height: 200px;
+    background-color: rgb(247, 247, 247);
+    overflow: hidden;
+    transition: all 0.3s ease; /* Transição suave */
+}
+
+.project img {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;  /* A altura será ajustada proporcionalmente à largura */
+    object-fit: cover;  /* Faz a imagem cobrir todo o espaço sem distorcer */
+    object-position: center;  /* Garante que a imagem fique centralizada */
+}
+
+.project .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(144, 192, 255, 0.9);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Transição suave */
+}
+
+.project:hover .overlay {
+    opacity: 1; /* Quando passar o mouse, a overlay aparece */
+    cursor: pointer;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo {
+    position: relative;
+    padding: 0px 40px 0px 40px;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;  /* Faz a imagem cobrir todo o espaço sem distorcer */
+    object-position: 50% 50%;  /* Garante que a imagem fique centralizada */
+}
+
+.botoes {
+    display: flex;
+    margin-top: 20px;
+}
+
+.meio {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.botao {
+    font-family: 'Europa', sans-serif;
+    margin:5px;
+    color: #90C0FF;
+    border: 2px solid #90C0FF;
+    padding: 10px;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px;
+}
+
+.botao:hover {
+    background-color: #90C0FF;
+    color: white;
+    cursor: pointer;
+}
+
+.botao-icone {
+    margin:5px;
+    color: #90C0FF;
+    border: 2px solid #90C0FF;
+    padding: 3px 5px 3px 5px;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 2px;
+}
+
+.botao-icone:hover {
+    background-color: #90C0FF;
+}
+
+.botao-icone svg {
+    height: 20px;
+    width: 20px;
+    fill:#90C0FF;
+}
+
+.botao-icone:hover svg {
+    fill:white;
+}
+
+
