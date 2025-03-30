@@ -12,12 +12,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
 
 body {
     font-family: 'Europa', sans-serif;
     background-color: white;
     color: #333;
-    padding: 64px;
+    padding: 40px;
 }
 
 header {
@@ -46,17 +52,88 @@ nav ul li a:hover {
     color: #B6D5FF;
 }
 
-.intro {
-    font-family: 'Europa', sans-serif;
-    width: 100%;
-    text-align: left;
-    margin: 40px;
-}
-
 footer {
     margin-top: 100px;
 }
 
 .selecionado {
     color: #90C0FF;
+}
+
+.hamburger-menu {
+    display: none;
+    justify-content: flex-end;
+    padding: 20px;
+}
+  
+.hamburger-icon {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+  
+.menu {
+    z-index: 2;
+    display: none;
+    flex-direction: column;
+    background-color: #f7f7f7;
+    position: absolute;
+    border: 1px solid #b4d4ff;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+    top: 95px;
+    right: 30px;
+    width: 200px;
+}
+  
+.menu-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f7f7f7;
+    color: #90C0FF;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 16px;
+    border-bottom: 1px solid #b4d4ff;
+}
+  
+.menu-btn:hover {
+    background-color: #90C0FF;
+    color: white;
+}
+  
+.menu.active {
+    display: flex;
+}
+
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        padding: 10px;
+    }
+
+    .menu-btn {
+        font-size: 14px;
+    }
+    
 }

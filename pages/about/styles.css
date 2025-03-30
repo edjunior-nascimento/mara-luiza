@@ -2,9 +2,8 @@
 .frame {
     border: none; /* Retira a borda padrão do iframe */
     width: 100%;
-    height: 120%;
+    height: 100%;
     display: block;
-    overflow: hidden;
 }
 .projects {
     display: grid;
@@ -125,14 +124,6 @@
 
 
 @media (max-width: 500px) {
-
-    .frame {
-        border: none; /* Retira a borda padrão do iframe */
-        width: 100%;
-        height: 150%;
-        display: block;
-        overflow: hidden;
-    }
     .projects {
         grid-template-columns: 1fr; /* Apenas uma coluna em telas pequenas */
     }
