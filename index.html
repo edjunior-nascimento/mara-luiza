@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Projetos</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,12 +14,11 @@
         </div>
         <nav>
             <ul>
-                <li><a class="menu-item selecionado" href="pages/home/index.html" target="conteudo">Trabalhos</a></li>
-                <li><a class="menu-item" href="pages/about/index.html" target="conteudo">Sobre</a></li>
+                <li><a class="selecionado" href="index.html">Projetos</a></li>
+                <li><a href="about.html">Sobre</a></li>
             </ul>
         </nav>
 
-          <!-- Menu Hambúrguer -->
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <svg id="burguer" width="38px" height="38px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -34,10 +33,10 @@
               
             </div>
             <div class="menu" id="menu">
-                <a class="selecionado" href="pages/home/index.html" target="conteudo" onclick="toggleMenu()">
-                    <button class="menu-btn">Trabalhos</button>
+                <a class="selecionado" href="index.html" onclick="toggleMenu()">
+                    <button class="menu-btn">Projetos</button>
                 </a>
-                <a href="pages/about/index.html" target="conteudo" onclick="toggleMenu()">
+                <a href="about.html" onclick="toggleMenu()">
                     <button class="menu-btn">Sobre</button>
                 </a>
             </div>
@@ -45,7 +44,28 @@
 
     </header>
 
-    <iframe name="conteudo" src="pages/home/index.html" frameborder="0" class="frame"></iframe>
+    <section class="projects">
+        <a href="pages/protecao-animal/index.html">
+            <div class="project">
+                <img src="assets/images/protecao_animal_main.png" alt="Projeto Proteção Animal">
+                <div class="overlay">
+                    <h2>Web Site ONG Proteção Animal</h2>
+                </div>
+            </div>
+        </a>
+        <div class="project">
+            <img src="assets/images/ibiapaba_explore_main.png" alt="Projeto Ibiapaba Explore">
+            <div class="overlay">
+                <h2>Aplicativo Ibiapaba Adventure</h2>
+            </div>
+        </div>
+        <div class="project">
+            <img src="assets/images/personalize_aqui_main.png" alt="Projeto Personalize Aqui">
+            <div class="overlay">
+                <h2>Web Site Personalize Aqui</h2>
+            </div>
+        </div>
+    </section>
 
     <footer>
         © 2022. Todos os direitos reservados para Mara Luiza.

@@ -1,0 +1,40 @@
+main {
+    width: 100%;
+    padding: 0px 40px 0px 40px;
+}
+
+section {
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section img{
+    width: 100%;
+}
+
+
+.card-problematica{
+    display: flex;
+    align-items: center;     /* Alinha verticalmente */
+    height: fit-content;
+    margin: 5px;
+}
+
+.card-problematica img {
+    width: 40px;
+    margin: 5px;
+}
+
+.dividir{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+}
+
+@media (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 0px 10px 0px 10px;
+    }
+     
+}
