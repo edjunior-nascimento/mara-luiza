@@ -2,48 +2,25 @@
 Bem-vindo(a) ao repositório do Portfólio de Mara Luiza!
 Este site apresenta os principais projetos em que Mara Luiza trabalhou, destacando suas habilidades, experiências e conquistas profissionais.
 
-✨ Sobre o projeto
+## Sobre o projeto
 O site foi desenvolvido com o objetivo de reunir, de forma prática e visualmente atraente, os trabalhos mais relevantes da trajetória de Mara Luiza.
-Aqui você encontrará uma seleção de projetos, com descrições, tecnologias utilizadas e links para visualização ou código fonte.
+Aqui você encontrará uma seleção de projetos, com descrições, tecnologias utilizadas e links para visualização.
 
-🛠 Tecnologias utilizadas
+## Tecnologias utilizadas
 HTML5
-
 CSS3
-
 JavaScript
 
-[Adicione outras tecnologias aqui, se houver, como React, Angular, etc.]
-
-🚀 Como visualizar o projeto
+## Como visualizar o projeto
 Você pode acessar o portfólio online por meio do link:
-[Link do site — (adicione aqui o link de deploy se já tiver)]
+https://edjunior-nascimento.github.io/mara-luiza/
 
 Ou, para rodar localmente:
 
-# Clone o repositório
-git clone https://github.com/SeuUsuarioGithub/portfolio-mara-luiza.git
+### Clone o repositório
+`git clone https://github.com/SeuUsuarioGithub/portfolio-mara-luiza.git`
 
-# Acesse a pasta do projeto
-cd portfolio-mara-luiza
+### Acesse a pasta do projeto
+`cd portfolio-mara-luiza`
 
-# Abra o arquivo index.html no seu navegador
-📂 Estrutura do projeto
-pgsql
-Copy
-Edit
-portfolio-mara-luiza/
-├── assets/
-│   ├── images/
-│   └── styles/
-├── projects/
-├── index.html
-├── README.md
-assets/: Contém imagens e estilos CSS.
-
-projects/: Contém as informações e imagens dos projetos apresentados.
-
-index.html: Página principal do site.
-
-📄 Licença
-Este projeto está licenciado sob a licença MIT.
+### Abra o arquivo index.html no seu navegador
