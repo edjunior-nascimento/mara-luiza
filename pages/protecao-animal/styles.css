@@ -13,22 +13,84 @@ section img{
     width: 100%;
 }
 
+.pesquisa{
+    display: flex;
+    div:first-of-type {
+        flex: 2;
+    }
+    div {
+        flex: 1;
+        padding: 1px;
+    }
+    div img{
+        display: block;
+    }
+}
+
+.wireframe-digitais {
+    justify-content: left;
+    gap: 1rem;
+    img {
+        min-width: 45%;
+        flex: 1;
+    }
+}
+
+.problematica{
+    display: flex;
+    div:first-of-type {
+        flex: 2;
+    }
+    div {
+        flex: 1;
+        padding: 1px;
+    }
+    div img{
+        display: block;
+    }
+}
+
+.prototipo-alta {
+    background-color: hsla(182, 63%, 42%, 0.2);
+    padding: 3rem;
+    justify-content: center;
+    gap: 1rem;
+    img {
+        height: 35rem;
+        max-width: 14rem;
+        flex: 1;
+    }
+}
+
 
 .card-problematica{
     display: flex;
-    align-items: center;     /* Alinha verticalmente */
+    align-items: center;
     height: fit-content;
     margin: 5px;
 }
 
 .card-problematica img {
     width: 40px;
-    margin: 5px;
+    margin: 10px 5px 10px 0px;
 }
-
-.dividir{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+.integracao {
+    text-align: center;
+    > img {
+        max-width: 28rem;
+    }
+}
+.integracao > div{
+    display: flex;
+    text-align: left;
+    height: fit-content;
+    margin: 5px;
+    margin-top: 5rem;
+    > img {
+        width: 40px;
+        height: 40px;
+        margin: 10px 25px 10px 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -36,5 +98,31 @@ section img{
         width: 100%;
         padding: 0px 10px 0px 10px;
     }
+
+    .pesquisa{
+        display: block;
+    }
+
+    .problematica{
+        display: block;
+    }
+
+    .prototipo-alta {
+        justify-content: center;
+        img {
+            height: auto;
+            max-width: 12rem;
+            flex: 1;
+        }
+    }
+
+    .wireframe-digitais{
+        justify-content: center;
+        img {
+            min-width: 100%;
+        }
+    }
+
+
      
 }
