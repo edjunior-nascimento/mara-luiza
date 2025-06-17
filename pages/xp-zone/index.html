@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+    <link rel="stylesheet" href="../../assets/styles/pages.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../../assets/icons/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../index.html">Projetos</a></li>
+                <li><a href="../../about.html">Sobre</a></li>
+            </ul>
+        </nav>
+
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <svg id="burguer" width="38px" height="38px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+
+                <svg id="fechar" style="display: none;" width="38px" height="38px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#0F0F0F"/>
+                </svg>
+              
+            </div>
+            <div class="menu" id="menu">
+                <a class="selecionado" href="../../index.html" onclick="toggleMenu()">
+                    <button class="menu-btn">Projetos</button>
+                </a>
+                <a href="../../about.html" onclick="toggleMenu()">
+                    <button class="menu-btn">Sobre</button>
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <img src="../../assets/images/capa_xpzone.png" alt="Curso pro figma xp zone">  
+            <div class="centro">
+                <h1>Landing Page</h1>
+                <span>Case UX/UI design</span>
+                <span>For Games</span>
+                <br/>
+                <img class="icone-down" src="../../assets/icons/down.png" alt="Baixo">  
+            </div>    
+        </section>
+
+        <section>
+            <h2>Sobre o Projeto</h2>
+            <div>
+                <p>
+                    Este projeto foi desenvolvido durante o curso "Pro Figma XP Zone", ministrado por Lucas Marte, com foco em técnicas avançadas de UX/UI no Figma. O desafio foi criar uma landing page para o XP ZONE, uma plataforma voltada para o universo gamer, com o objetivo de proporcionar uma experiência visual imersiva e funcional para o público brasileiro apaixonado por jogos.
+                </p>
+                <p>
+                    Durante o processo, aprofundei meus conhecimentos em hierarquia visual, design system, componentização e prototipagem interativa, aplicando conceitos modernos de usabilidade e identidade visual.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Workflow</h2>
+            <p>
+                Fluxo de trabalho que orientou o desenvolvimento da landing page, desde o briefing até o protótipo final no Figma.
+            </p>
+            <div class="centro">
+                <img class="imagem-center" src="../../assets/images/xp_workflow.png" alt="Workflow">  
+            </div>
+        </section>
+
+        <section>
+            <h2>Tipografia</h2>
+            <p>
+                Para compor a identidade visual da XP ZONE, foram escolhidas duas fontes principais que equilibram modernidade e legibilidade:
+            </p>
+            <div>
+                <h3>OPEN SANS</h3>
+                <p>
+                    Fonte versátil e legível, utilizada em textos corridos e informativos.
+                </p>
+                <div class="centro">
+                    <img class="imagem-center" src="../../assets/images/xp_tipografia.png" alt="OPEN SANS">  
+                </div>
+            </div>
+            <div>
+                <h3>OXANIUM</h3>
+                <p>
+                    Com um visual futurista e tecnológico, perfeita para títulos e destaques do universo gamer.
+                </p>
+                <div class="centro">
+                    <img class="imagem-center" src="../../assets/images/xp_tipografia2.png" alt="OXANIUM">  
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Cores</h2>
+            <p>
+                As cores escolhidas ajudam a criar uma atmosfera moderna e envolvente, bem do jeito que o público gamer gosta.            </p>
+            <div class="centro">
+                <img class="imagem-center" src="../../assets/images/xp_cores.png" alt="Cores">  
+            </div>
+        </section>
+
+        <section>
+            <h2>Wireframe</h2>
+            <p>
+                Apresentação das primeiras estruturas do layout, definindo o posicionamento dos elementos antes da estilização visual.
+            </p>
+            <div class="centro">
+                <img class="imagem-center" src="../../assets/images/xp_wireframe.png" alt="Wireframes">  
+            </div>
+        </section>
+
+        <section>
+            <h2>Resutado</h2>
+            <p>
+                Protótipo final da landing page, totalmente navegável e responsivo, com foco na experiência do usuário e identidade da marca.
+            </p>
+            <div class="centro">
+                <img class="imagem-center" src="../../assets/images/xp_resultado.png" alt="Resultado">  
+            </div>
+        </section>
+
+        <section>
+            <h2>LINKS</h2>
+            <a class="link" href="https://www.figma.com/design/EJVDSodCpBAGpEy3OOW0rb/Curso-PROFIGMA-WEB---assests--Community---Community---Copy-?node-id=442-805&p=f&t=KKlLwPWK5AvI8iQ4-0" target="_blank">
+                <i class="material-icons">lightbulb</i>
+                <u>Projeto no Figma</u> 
+            </a>
+            <br/>
+            <a class="link" href="https://www.figma.com/proto/EJVDSodCpBAGpEy3OOW0rb/Curso-PROFIGMA-WEB---assests--Community---Community---Copy-?node-id=706-596&t=KKlLwPWK5AvI8iQ4-0&scaling=scale-down&content-scaling=fixed&page-id=442%3A805&starting-point-node-id=706%3A596" target="_blank">
+                <i class="material-icons">web</i>
+                <u>Prototipo XP Zone (WEB)</u>
+            </a>
+            <br/>
+            <a class="link" href="https://www.figma.com/proto/EJVDSodCpBAGpEy3OOW0rb/Curso-PROFIGMA-WEB---assests--Community---Community---Copy-?node-id=713-1433&t=KKlLwPWK5AvI8iQ4-0&scaling=scale-down&content-scaling=fixed&page-id=442%3A805&starting-point-node-id=706%3A596" target="_blank">
+                <i class="material-icons">tablet</i>
+                <u>Prototipo XP Zone (TABLET)</u> 
+            </a>
+            <br/>
+            <a class="link" href="https://www.figma.com/proto/EJVDSodCpBAGpEy3OOW0rb/Curso-PROFIGMA-WEB---assests--Community---Community---Copy-?node-id=713-1627&t=KKlLwPWK5AvI8iQ4-0&scaling=scale-down&content-scaling=fixed&page-id=442%3A805&starting-point-node-id=706%3A596" target="_blank">
+                <i class="material-icons">smartphone</i>
+                <u>Prototipo XP Zone (MOBILE)</u> 
+            </a>
+        </section>
+
+    </main>
+
+    <footer>
+        © 2022. Todos os direitos reservados para Mara Luiza.
+    </footer>
+    <script src="../../script.js"></script>
+</body>
+</html>

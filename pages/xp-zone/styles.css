@@ -1,0 +1,28 @@
+.centro{
+    text-align: center;
+    
+}
+.icone-down {
+    width: 30px;
+    margin-top: 50px;
+}
+
+.imagem-center {
+    width: 60%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+@media (max-width: 768px) {
+
+    .icone-down {
+        width: 20px;
+    }
+
+    .imagem-center {
+        width: 90%;
+    }
+
+    
+}
