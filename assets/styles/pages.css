@@ -52,6 +52,13 @@ ul {
     color: #2E8B57;
 }
 
+.link {
+  display: flex;
+  align-items: center; /* Alinha verticalmente */
+  gap: 8px; /* Espaço entre ícone e texto (opcional) */
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
     main {
         width: 100%;
