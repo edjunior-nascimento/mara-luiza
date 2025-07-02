@@ -1,88 +1,90 @@
 .enquete-background{
-    
     background-color: #C0DCCD;
     justify-content: center;
     padding: 5rem;
-    .celular-enquete {
-        max-width: 15rem;
-        margin-right: 3rem;
-    }
-    div {
-        text-align: center;
-        flex: 1;
-    }
-    .icone-grafico {
-        width: 50px;
-    }
-    
+}
+
+.enquete-background .celular-enquete {
+    max-width: 15rem;
+    margin-right: 3rem;
+}
+.enquete-background div {
+    text-align: center;
+    flex: 1;
+}
+.enquete-background .icone-grafico {
+    width: 50px;
 }
 
 .resultado-enquete {
     justify-content: left;
     gap: 1rem;
-    img {
-        max-width: 14rem;
-        flex: 1;
-    }
+}
+
+.resultado-enquete img {
+    max-width: 14rem;
+    flex: 1;
 }
 
 .resultado-enquete-grafico{
     justify-content: center;
     gap: 1rem;
-    img {
-        max-width: 35rem;
-        flex: 1;
-    }
-    div {
-        flex: 1;
-    }
 }
 
-.personas {
-    img:first-of-type {
-        width: 100%;
-    }
-    img{
-        flex: 1;
-        width: 50%;
-    }
+.resultado-enquete-grafico img {
+    max-width: 35rem;
+    flex: 1;
+}
+.resultado-enquete-grafico div {
+    flex: 1;
+}
+
+.personas img:first-of-type {
+    width: 100%;
+}
+.personas img{
+    flex: 1;
+    width: 50%;
 }
 
 .pricipais-insights {
     gap: 1rem;
-    div {
-        flex: 1;
-        max-width: 14rem;
-        min-width: 11rem;
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            padding: 2rem;
-        }
-    }
+}
+
+.pricipais-insights div {
+    flex: 1;
+    max-width: 14rem;
+    min-width: 11rem;
+}
+
+.pricipais-insights div img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding: 2rem;
 }
 
 .ideacao{
     display: flex;
-    div:first-of-type {
-        flex: 2;
-    }
-    div {
-        flex: 1;
-    }
-    div img{
-        display: block;
-    }
 }
 
-.teste-usabilidade {
-    div {
-        flex: 1;
-    }
-    div img {
-        display: block;
-    }
+.ideacao div:first-of-type {
+    flex: 2;
+}
+
+.ideacao div {
+    flex: 1;
+}
+
+.ideacao div img{
+    display: block;
+}
+
+.teste-usabilidade div {
+    flex: 1;
+}
+.teste-usabilidade div img {
+    display: block;
 }
 
 .resultado-final-dashboard {
@@ -91,15 +93,17 @@
     display: flex;
     align-items: center;
     gap:1rem;
-    .prototipo-web {
-        flex: 3;
-        display: grid;
-        gap: 1rem;
-        grid-template-columns: 1fr 1fr;
-    }
-    .prototipo-mobile {
-        flex: 1;
-    }
+}
+
+.resultado-final-dashboard .prototipo-web {
+    flex: 3;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resultado-final-dashboard .prototipo-mobile {
+    flex: 1;
 }
 
 .resultado-final-site {
@@ -110,55 +114,56 @@
     gap:1rem;
 }
 
-.consideracoes-finais{
-    div {
-        flex: 1;
-    }
+.consideracoes-finais div {
+    flex: 1;
 }
 
 
 @media (max-width: 768px) {
     .enquete-background{
         padding: 3rem;
-        .celular-enquete {
-            margin-right: 0px;
-            margin-bottom: 2rem;
-        }
-        .icone-grafico {
-            display: none;
-        }
+    }
+
+    .celular-enquete {
+        margin-right: 0px;
+        margin-bottom: 2rem;
+    }
+    
+    .icone-grafico {
+        display: none;
     }
 
     .resultado-enquete {
         justify-content: left;
-        img {
-            max-width: 11rem;
-            flex: 1;
-        }
     }
 
-    .resultado-enquete-grafico{
-        img {
-            margin-bottom: 2rem;
-        }
+    .resultado-enquete img {
+        max-width: 11rem;
+        flex: 1;
     }
 
-    .personas {
-        img{
-            width: 100%;
-        }
+    .resultado-enquete > img {
+        max-width: 11rem;
+        flex: 1;
     }
 
-    .pricipais-insights {
-        div {
-            min-width: 11rem;
-            img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                padding: 2rem;
-            }
-        }
+    .resultado-enquete-grafico > img {
+        margin-bottom: 2rem;
+    }
+
+    .personas > img{
+        width: 100%;
+    }
+
+    .pricipais-insights > div {
+        min-width: 11rem;
+    }
+
+    .pricipais-insights > div > img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        padding: 2rem;
     }
 
     .ideacao{
@@ -167,9 +172,10 @@
 
     .teste-usabilidade {
         display: block;
-        div img {
-            display: block;
-        }
+    }
+
+    .teste-usabilidade > div > img {
+        display: block;
     }
 
     .resultado-final-dashboard {
@@ -177,17 +183,19 @@
         display: block;
         align-items: center;
         gap: 2rem;
-        .prototipo-web {
-            display: block;
-            gap: 2rem;
-        }
+    } 
+
+    .resultado-final-dashboard > .prototipo-web {
+        display: block;
+        gap: 2rem;
     } 
 
     .resultado-final-site {
         display: block;
-        div img {
-            padding: 0.5rem;
-        }
+    }
+
+    .resultado-final-site > div img {
+        padding: 0.5rem;
     }
 
     .consideracoes-finais{

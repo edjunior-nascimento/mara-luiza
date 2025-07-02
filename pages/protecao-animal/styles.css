@@ -15,39 +15,46 @@ section img{
 
 .pesquisa{
     display: flex;
-    div:first-of-type {
-        flex: 2;
-    }
-    div {
-        flex: 1;
-        padding: 1px;
-    }
-    div img{
-        display: block;
-    }
+}
+
+.pesquisa div:first-of-type {
+    flex: 2;
+}
+
+.pesquisa div {
+    flex: 1;
+    padding: 1px;
+}
+
+.pesquisa div img{
+    display: block;
 }
 
 .wireframe-digitais {
     justify-content: left;
-    gap: 1rem;
-    img {
-        min-width: 45%;
-        flex: 1;
-    }
+    gap: 1rem;   
+}
+
+.wireframe-digitais img {
+    min-width: 45%;
+    flex: 1;
 }
 
 .problematica{
     display: flex;
-    div:first-of-type {
-        flex: 2;
-    }
-    div {
-        flex: 1;
-        padding: 1px;
-    }
-    div img{
-        display: block;
-    }
+}
+
+.problematica div:first-of-type {
+    flex: 2;
+}
+
+.problematica div {
+    flex: 1;
+    padding: 1px;
+}
+
+.problematica div img{
+    display: block;
 }
 
 .prototipo-alta {
@@ -55,13 +62,13 @@ section img{
     padding: 3rem;
     justify-content: center;
     gap: 1rem;
-    img {
-        height: 35rem;
-        max-width: 14rem;
-        flex: 1;
-    }
 }
 
+.prototipo-alta img {
+    height: 35rem;
+    max-width: 14rem;
+    flex: 1;
+}
 
 .card-problematica{
     display: flex;
@@ -74,24 +81,31 @@ section img{
     width: 40px;
     margin: 10px 5px 10px 0px;
 }
+
 .integracao {
     text-align: center;
-    > img {
-        max-width: 28rem;
-    }
 }
+
+.integracao > img {
+    max-width: 28rem;
+}
+
 .integracao > div{
     display: flex;
     text-align: left;
-    height: fit-content;
+    align-items: flex-start;
+    height: auto;
     margin: 5px;
     margin-top: 5rem;
-    > img {
-        width: 40px;
-        height: 40px;
-        margin: 10px 25px 10px 0px;
-    }
 }
+
+.integracao > div > img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 25px 10px 0px;
+    object-fit: contain;
+}
+
 
 @media (max-width: 768px) {
     main {
@@ -109,20 +123,20 @@ section img{
 
     .prototipo-alta {
         justify-content: center;
-        img {
-            height: auto;
-            max-width: 12rem;
-            flex: 1;
-        }
+    }
+
+    .prototipo-alta img {
+        height: auto;
+        max-width: 12rem;
+        flex: 1;
     }
 
     .wireframe-digitais{
-        justify-content: center;
-        img {
-            min-width: 100%;
-        }
+        justify-content: center;  
     }
-
-
-     
+    
+    .wireframe-digitais img {
+        min-width: 100%;
+    }
+         
 }
