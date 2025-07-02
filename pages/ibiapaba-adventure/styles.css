@@ -17,7 +17,7 @@
 }
 
 .resultado-enquete {
-    justify-content: left;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
@@ -48,6 +48,10 @@
 }
 
 .pricipais-insights {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch; /* ou center */
     gap: 1rem;
 }
 
@@ -124,8 +128,8 @@
         padding: 3rem;
     }
 
-    .celular-enquete {
-        margin-right: 0px;
+    .enquete-background .celular-enquete {
+        margin-right: 0rem;
         margin-bottom: 2rem;
     }
     
@@ -134,7 +138,7 @@
     }
 
     .resultado-enquete {
-        justify-content: left;
+        justify-content: flex-start;
     }
 
     .resultado-enquete img {
