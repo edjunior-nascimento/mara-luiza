@@ -59,6 +59,7 @@
     flex: 1;
     max-width: 14rem;
     min-width: 11rem;
+    text-align: center;
 }
 
 .pricipais-insights div img {
@@ -138,17 +139,12 @@
     }
 
     .resultado-enquete {
-        justify-content: flex-start;
+        justify-content: center;
     }
-
-    .resultado-enquete img {
-        max-width: 11rem;
-        flex: 1;
-    }
-
+    
     .resultado-enquete > img {
-        max-width: 11rem;
-        flex: 1;
+        max-width: 15rem;
+        margin-bottom: 5rem;
     }
 
     .resultado-enquete-grafico > img {
@@ -160,13 +156,10 @@
     }
 
     .pricipais-insights > div {
-        min-width: 11rem;
+        min-width: 8rem;
     }
 
     .pricipais-insights > div > img {
-        max-width: 100%;
-        height: auto;
-        display: block;
         padding: 2rem;
     }
 
