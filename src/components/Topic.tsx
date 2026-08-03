@@ -18,7 +18,7 @@ export default function Topic(topicProps: TopicProps) {
         {topicProps.titulo}
       </h2>
 
-      <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600">
+      <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-600" >
         {topicProps.descricao}
       </p>
     </div>

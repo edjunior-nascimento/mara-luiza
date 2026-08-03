@@ -11,17 +11,54 @@ export default function Research() {
   return (
     <section
       id="pesquisa"
-      className="mx-auto container px-6 py-24"
+      className="mx-auto container px-6 py-24 px-20"
     >
 
       <Topic 
         topico={{icone: Search, nome: "Discovery", cor: CoresEnum.VIOLET}}
         titulo="Pesquisa & Descobertas"
-        descricao=" Antes de propor qualquer solução, foi necessário entender como
+        descricao="Antes de propor qualquer solução, foi necessário entender como
           voluntários, doadores e possíveis adotantes interagiam com a ONG.
           A pesquisa permitiu identificar dificuldades reais e direcionar as
           decisões de design."
       />
+
+      {/* Participants Section */}
+      <div className="mt-14 mb-10 rounded-3xl bg-gradient-to-br from-violet-50 to-purple-50 p-8 border border-violet-100">
+        <h3 className="text-2xl font-bold text-slate-900 mb-6">Quem participou da pesquisa</h3>
+        <div className="grid gap-6 md:grid-cols-3 mb-8">
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <p className="text-4xl font-bold text-violet-600 mb-2">6</p>
+            <p className="text-slate-700 font-medium">Possíveis Adotantes</p>
+          </div>
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <p className="text-4xl font-bold text-violet-600 mb-2">4</p>
+            <p className="text-slate-700 font-medium">Doadores Ativos</p>
+          </div>
+          <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <p className="text-4xl font-bold text-violet-600 mb-2">2</p>
+            <p className="text-slate-700 font-medium">Voluntários</p>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-2xl p-6 mb-6">
+          <h4 className="font-semibold text-slate-900 mb-3">Por que essas pessoas foram escolhidas?</h4>
+          <ul className="space-y-2 text-slate-600">
+            <li>• <strong>Possíveis adotantes:</strong> Selecionados entre pessoas que visitaram a ONG nos últimos 6 meses ou tiveram contato via redes sociais.</li>
+            <li>• <strong>Doadores:</strong> Aqueles com histórico de doações regulares (mensais ou anuais) para garantir experiência real com o processo.</li>
+            <li>• <strong>Voluntários:</strong> Membros ativos que conhecem profundamente os processos internos da ONG.</li>
+          </ul>
+        </div>
+
+        <div className="bg-white rounded-2xl p-6">
+          <h4 className="font-semibold text-slate-900 mb-3">O que essa etapa permitiu descobrir</h4>
+          <p className="text-slate-600 leading-7">
+            O Discovery revelou que os principais desafios estão na <strong>falta de transparência</strong> sobre o destino de doações e <strong>processo de adoção confuso</strong>. 
+            Identificamos também uma <strong>alta demanda por comunicação clara</strong> sobre o status dos animais disponíveis e uma <strong>oportunidade significativa</strong> para criar um 
+            espaço centralizado onde todas essas informações estivessem acessíveis e bem organizadas.
+          </p>
+        </div>
+      </div>
       {/* Imagens */}
       <div className="grid gap-6 lg:grid-cols-2">
         <div className="overflow-hidden rounded-3xl bg-white p-4 shadow-lg">
@@ -70,13 +107,40 @@ export default function Research() {
 
         <Card
           icon={<ClipboardList size={22} />}
-          title="Ferramentas"
+          title="Escala da pesquisa"
         >
           <ul className="space-y-3">
-            <li>• Google Forms</li>
-            <li>• Entrevistas presenciais</li>
-            <li>• Registro de observações</li>
-            <li>• Benchmark competitivo</li>
+            <li>• <strong>12 entrevistas presenciais</strong> (6 adotantes, 4 doadores, 2 voluntários)</li>
+            <li>• <strong>27 respostas</strong> via Google Forms</li>
+            <li>• <strong>Duração média:</strong> 25 minutos por entrevista</li>
+            <li>• <strong>Período:</strong> 4 semanas de coleta de dados</li>
+          </ul>
+        </Card>
+
+        <Card
+          icon={<MessageSquare size={22} />}
+          title="Critérios de seleção dos participantes"
+        >
+          <ul className="space-y-3">
+            <li>• Contato recente com a ONG (últimos 6 meses)</li>
+            <li>• Experiência ativa no processo de adoção ou doação</li>
+            <li>• Disposição em participar de entrevistas</li>
+            <li>• Diversidade de contextos e motivações</li>
+          </ul>
+        </Card>
+
+        <Card
+          icon={<FileText size={22} />}
+          title="Organização dos dados"
+        >
+          <p className="leading-8 text-slate-600 mb-3">
+            Todos os dados coletados foram sistematizados seguindo:
+          </p>
+          <ul className="space-y-2 text-slate-600">
+            <li>• Transcrição das entrevistas e categorização temática</li>
+            <li>• Tabulação de respostas do formulário em planilha</li>
+            <li>• Análise comparativa entre grupos de usuários</li>
+            <li>• Identificação de padrões e insights recorrentes</li>
           </ul>
         </Card>
 

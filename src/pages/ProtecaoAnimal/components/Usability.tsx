@@ -37,7 +37,7 @@ const images = [
 
 export default function Usability() {
   return (
-    <section className="mx-auto container px-6 py-24">
+    <section className="mx-auto container py-24 px-20">
 
       {/* Header */}
 

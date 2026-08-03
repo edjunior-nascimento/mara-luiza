@@ -21,14 +21,13 @@ type LinkType = {
 
 export default function Links(links: LinkType) {
   return (
-    <section className="mx-auto container px-6 py-24">
+    <section className="mx-auto container px-6 py-24 px-20">
 
       <Topic
         topico={{ icone: FileText, nome: "Recursos", cor: CoresEnum.VIOLET }}
         titulo="Explore o Projeto"
         descricao="Todos os artefatos desenvolvidos durante o projeto estão disponíveis
-          para consulta, incluindo documentação, arquivos do Figma e protótipos
-          navegáveis."
+          para consulta, incluindo arquivos do Figma e protótipos navegáveis."
       />
 
       <div className="mt-16 grid gap-6 md:grid-cols-2 xl:grid-cols-3">

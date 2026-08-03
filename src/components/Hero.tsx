@@ -8,12 +8,11 @@ interface HeroProps {
   titulo: string;
   descricao: string;
   tags : string[];
-  estatisticas: {label: string; valor: string; icone: any;}[];
 }
 
 export default function Hero(heroProps: HeroProps) {
   return (
-    <section className={`relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50`}>
+    <section className={`relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50 px-20`}>
 
       {/* Background */}
 
@@ -84,47 +83,6 @@ export default function Hero(heroProps: HeroProps) {
             />
 
           </div>
-
-        </div>
-
-      </div>
-
-      {/* Estatísticas */}
-
-      <div className="mx-auto -mt-8 max-w-6xl px-6 pb-24">
-
-        <div className="grid gap-6 rounded-[32px] border border-slate-200 bg-white p-8 shadow-xl md:grid-cols-3">
-
-          {heroProps.estatisticas.map((item) => {
-
-            const Icon = item.icone;
-
-            return (
-              <div
-                key={item.label}
-                className="flex items-start gap-4"
-              >
-                <div className={`flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-100 text-blue-600`}>
-
-                  <Icon size={24} />
-
-                </div>
-
-                <div>
-
-                  <p className="text-sm uppercase tracking-wide text-slate-500">
-                    {item.label}
-                  </p>
-
-                  <h3 className="mt-1 text-xl font-semibold text-slate-900">
-                    {item.valor}
-                  </h3>
-
-                </div>
-
-              </div>
-            );
-          })}
 
         </div>
 

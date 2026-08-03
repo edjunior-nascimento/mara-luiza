@@ -59,9 +59,9 @@ const Skills = () => {
       skills: [
         { name: "Product Discovery", level: 90, icon: <LucidePackageSearch className="w-5 h-5" /> },
         { name: "Roadmap de Produto", level: 90, icon: <Waypoints className="w-5 h-5" /> },
-        { name: "Métricas & KPIs", level: 90, icon: <BarChart3Icon className="w-5 h-5" /> },
-        { name: "Business Model Canvas", level: 100, icon: <Table className="w-5 h-5" /> },
-        { name: "Benchmark Competitivo", level: 100, icon: <Tag className="w-5 h-5" /> },
+        { name: "Métricas & KPIs", level: 75, icon: <BarChart3Icon className="w-5 h-5" /> },
+        { name: "Business Model Canvas", level: 90, icon: <Table className="w-5 h-5" /> },
+        { name: "Benchmark Competitivo", level: 90, icon: <Tag className="w-5 h-5" /> },
       ]
     },
     {
@@ -71,10 +71,10 @@ const Skills = () => {
       skills: [
         { name: "User Flows", level: 100, icon: <Milestone className="w-5 h-5" /> },
         { name: "Arquitetura da Informação", level: 90, icon: <Workflow className="w-5 h-5" /> },
-        { name: "Wireframes", level: 100, icon: <PanelsTopLeft className="w-5 h-5" /> },
-        { name: "Design de Interação", level: 100, icon: <MousePointerClick className="w-5 h-5" /> },
+        { name: "Wireframes", level: 90, icon: <PanelsTopLeft className="w-5 h-5" /> },
+        { name: "Design de Interação", level: 90, icon: <MousePointerClick className="w-5 h-5" /> },
         { name: "Design Centrado no Usuário", level: 90, icon: <Monitor className="w-5 h-5" /> },
-        { name: "Prototipação", level: 100, icon: <AppWindow className="w-5 h-5" /> }
+        { name: "Prototipação", level: 90, icon: <AppWindow className="w-5 h-5" /> }
       ]
     },
     {
@@ -82,11 +82,11 @@ const Skills = () => {
       icon: <MonitorSmartphoneIcon className="w-8 h-8" />,
       description: "Crio interfaces visuais atraentes e funcionais, garantindo uma experiência de usuário consistente",
       skills: [
-        { name: "Design System", level: 100, icon: <LayoutDashboard className="w-5 h-5" /> },
-        { name: "Componentes", level: 100, icon: <Puzzle className="w-5 h-5" /> },
-        { name: "Auto Layout", level: 100, icon: <Maximize2 className="w-5 h-5" /> },
-        { name: "Responsividade", level: 100, icon: <Scaling className="w-5 h-5" /> },
-        { name: "Acessibilidade (WCAG)", level: 100, icon: <PersonStanding className="w-5 h-5" /> }
+        { name: "Design System", level: 90, icon: <LayoutDashboard className="w-5 h-5" /> },
+        { name: "Componentes", level: 90, icon: <Puzzle className="w-5 h-5" /> },
+        { name: "Auto Layout", level: 75, icon: <Maximize2 className="w-5 h-5" /> },
+        { name: "Responsividade", level: 75, icon: <Scaling className="w-5 h-5" /> },
+        { name: "Acessibilidade (WCAG)", level: 75, icon: <PersonStanding className="w-5 h-5" /> }
       ]
     },
     {
@@ -97,7 +97,7 @@ const Skills = () => {
         { name: "Figma", level: 100, icon: <FaFigma className="w-5 h-5" /> },
         { name: "FigJam", level: 100, icon: <FaFigma className="w-5 h-5" /> },
         { name: "Miro", level: 100, icon: <SiMiro className="w-5 h-5" /> },
-        { name: "Google Forms", level: 100, icon: <SiGoogleforms className="w-5 h-5" /> }
+        { name: "Google Forms", level: 75, icon: <SiGoogleforms className="w-5 h-5" /> }
       ]
     },
     {
@@ -106,12 +106,12 @@ const Skills = () => {
       description: "Utilização de inteligência artificial para otimizar o processo de design e criar soluções inovadoras",
       skills: [
         { name: "ChatGPT", level: 90, icon: <PiOpenAiLogo className="w-5 h-5" /> },
-        { name: "Gemini", level: 90, icon: <SparklesIcon className="w-5 h-5" /> },
-        { name: "Claude", level: 75, icon: <BsClaude className="w-5 h-5" /> },
-        { name: "Bolt", level: 90, icon: <FaBolt className="w-5 h-5" /> },
-        { name: "Cursor", level: 90, icon: <BsCursor className="w-5 h-5" /> },
-        { name: "Figma AI", level: 90, icon: <FaFigma className="w-5 h-5" /> },
-        { name: "Lovable", level: 90, icon: <Heart className="w-5 h-5" /> }
+        { name: "Gemini", level: 75, icon: <SparklesIcon className="w-5 h-5" /> },
+        { name: "Claude", level: 50, icon: <BsClaude className="w-5 h-5" /> },
+        { name: "Bolt", level: 75, icon: <FaBolt className="w-5 h-5" /> },
+        { name: "Cursor", level: 50, icon: <BsCursor className="w-5 h-5" /> },
+        { name: "Figma AI", level: 75, icon: <FaFigma className="w-5 h-5" /> },
+        { name: "Lovable", level: 75, icon: <Heart className="w-5 h-5" /> }
       ]
     }
   ];
@@ -125,14 +125,14 @@ const Skills = () => {
       case porcentagem >= 75:
         return "Uso frequente";
       case porcentagem >= 50:
-        return "Intermediário";
+        return "Já usei";
       default:
         return "Iniciante";
     }
   }
 
   return (
-    <section id="skills" className="py-20 bg-white/30">
+    <section id="skills" className="py-20 bg-white/30 px-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-blue-300 bg-clip-text text-transparent">

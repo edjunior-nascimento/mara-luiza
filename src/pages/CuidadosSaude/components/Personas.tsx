@@ -13,7 +13,7 @@ const personas = [
     name: "Maria Aparecida",
     age: "72 anos",
     role: "Aposentada",
-    image: "/images/senior-health/persona-maria.png",
+    image: "/images/senior-health/persona-maria-72.png",
     icon: Heart,
     bio: "Mora sozinha, possui diabetes e hipertensão e busca manter sua independência, mas sente dificuldade em organizar toda a rotina de cuidados com a saúde.",
     goals: [
@@ -33,7 +33,7 @@ const personas = [
     name: "Juliana Oliveira",
     age: "42 anos",
     role: "Filha e Cuidadora",
-    image: "/images/senior-health/persona-juliana.png",
+    image: "/images/senior-health/persona-juliana-42.png",
     icon: Users,
     bio: "Acompanha diariamente a rotina da mãe, ajudando na organização de consultas, medicamentos e exames, mesmo conciliando trabalho e família.",
     goals: [
@@ -55,7 +55,7 @@ export default function Personas() {
   return (
     <section
       id="personas"
-      className="bg-slate-50 py-28"
+      className="bg-slate-50 py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

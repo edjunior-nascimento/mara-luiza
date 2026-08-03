@@ -17,13 +17,13 @@ const Hero = () => {
   };
 
   return (
-    <section id="hero" className="min-h-screen flex items-center justify-center pt-20">
+    <section id="hero" className="min-h-screen flex items-center px-20 justify-center pt-20">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl">
               <img
-                src={"/images/mara.jpg"}
+                src={"/images/mara-rosto.JPG"}
                 alt="Mara Luiza - UX/UI Designer"
                 className="w-full h-full object-cover"
               />

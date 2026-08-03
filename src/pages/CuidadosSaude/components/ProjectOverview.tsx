@@ -57,7 +57,7 @@ export default function ProjectOverview() {
   return (
     <section
       id="overview"
-      className="bg-white py-28"
+      className="bg-white py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -96,63 +96,6 @@ export default function ProjectOverview() {
               </article>
             );
           })}
-        </div>
-
-        {/* Informações */}
-
-        <div className="mt-24 grid gap-10 lg:grid-cols-[1.4fr_1fr]">
-          <div className="rounded-[36px] bg-gradient-to-br from-slate-900 to-slate-800 p-12 text-white shadow-2xl">
-            <div className="flex items-center gap-3">
-              <Flag size={28} />
-
-              <h3 className="text-3xl font-bold">
-                Desafio do projeto
-              </h3>
-            </div>
-
-            <p className="mt-8 text-xl leading-9 text-slate-300">
-              Desenvolver uma experiência capaz de reduzir a complexidade da
-              rotina de cuidados com a saúde, centralizando informações que
-              normalmente estão distribuídas entre diferentes aplicativos,
-              cadernos, receitas médicas e lembretes informais.
-            </p>
-
-            <div className="mt-10 rounded-2xl bg-white/10 p-6 backdrop-blur">
-              <p className="text-lg leading-8 text-slate-200">
-                A proposta foi criar uma plataforma que ajudasse pessoas idosas
-                a manter hábitos saudáveis de forma preventiva, promovendo maior
-                autonomia e facilitando o acompanhamento por familiares e
-                profissionais da saúde.
-              </p>
-            </div>
-          </div>
-
-          <aside className="rounded-[36px] border border-slate-200 bg-white p-10 shadow-sm">
-            <div className="flex items-center gap-3">
-              <Clock3 className="text-emerald-600" />
-
-              <h3 className="text-2xl font-bold text-slate-900">
-                Informações
-              </h3>
-            </div>
-
-            <div className="mt-8 space-y-6">
-              {projectInfo.map((item) => (
-                <div
-                  key={item.label}
-                  className="border-b border-slate-100 pb-5 last:border-none last:pb-0"
-                >
-                  <p className="text-sm uppercase tracking-wide text-slate-500">
-                    {item.label}
-                  </p>
-
-                  <p className="mt-2 font-semibold text-slate-900">
-                    {item.value}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </aside>
         </div>
       </div>
     </section>

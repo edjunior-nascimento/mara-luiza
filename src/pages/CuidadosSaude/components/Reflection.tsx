@@ -42,7 +42,7 @@ export default function Reflection() {
   return (
     <section
       id="reflection"
-      className="bg-white py-28"
+      className="bg-white py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -93,9 +93,7 @@ export default function Reflection() {
             </h3>
 
             <p className="mt-6 text-lg leading-8 text-amber-50">
-              Embora o MVP tenha validado os principais fluxos, diversas
-              oportunidades surgiram durante os testes. As próximas iterações
-              ampliariam ainda mais o ecossistema de cuidados, envolvendo
+              As próximas iterações ampliariam ainda mais o ecossistema de cuidados, envolvendo
               familiares, profissionais e dispositivos conectados.
             </p>
           </div>
@@ -116,24 +114,6 @@ export default function Reflection() {
               ))}
             </div>
           </div>
-        </div>
-
-        {/* Encerramento */}
-
-        <div className="mt-24 rounded-[40px] bg-slate-900 p-12 text-white shadow-2xl">
-          <h3 className="text-3xl font-bold">
-            Considerações finais
-          </h3>
-
-          <p className="mt-8 max-w-5xl text-xl leading-9 text-slate-300">
-            Este projeto consolidou minha compreensão sobre a importância da
-            pesquisa, da acessibilidade e da validação contínua no processo de
-            UX Design. Mais do que desenhar interfaces, o desafio consistiu em
-            criar uma experiência capaz de promover autonomia, segurança e
-            qualidade de vida para pessoas idosas. Essa experiência reforçou que
-            boas soluções surgem quando decisões de design são fundamentadas em
-            necessidades reais, e não apenas em tendências visuais.
-          </p>
         </div>
       </div>
     </section>

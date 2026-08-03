@@ -62,7 +62,7 @@ export default function Results() {
   return (
     <section
       id="results"
-      className="bg-slate-50 py-28"
+      className="bg-slate-50 py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

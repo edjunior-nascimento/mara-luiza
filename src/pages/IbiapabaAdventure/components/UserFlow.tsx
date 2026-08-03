@@ -68,7 +68,7 @@ export default function UserFlow() {
   return (
     <section
       id="user-flow"
-      className="bg-white py-28"
+      className="bg-white py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

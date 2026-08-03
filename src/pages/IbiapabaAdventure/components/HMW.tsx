@@ -42,7 +42,7 @@ export default function HMW() {
   return (
     <section
       id="hmw"
-      className="bg-white py-28"
+      className="bg-white py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

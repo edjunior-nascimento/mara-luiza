@@ -10,33 +10,28 @@ import { CoresEnum } from "../../../enums/Cores.Enum";
 
 const colors = [
   {
-    name: "Primary",
+    name: "Primaria",
     hex: "#14B8A6",
     className: "bg-teal-500",
   },
   {
-    name: "Secondary",
-    hex: "#0EA5E9",
+    name: "Secundaria",
+    hex: "#0FA7E2",
     className: "bg-sky-500",
   },
   {
-    name: "Success",
-    hex: "#22C55E",
-    className: "bg-green-500",
-  },
-  {
-    name: "Warning",
-    hex: "#F59E0B",
+    name: "Tertiaria",
+    hex: "#FFB900",
     className: "bg-amber-500",
   },
   {
     name: "Danger",
-    hex: "#EF4444",
+    hex: "#E02D2D",
     className: "bg-red-500",
   },
   {
-    name: "Neutral",
-    hex: "#334155",
+    name: "Neutra",
+    hex: "#94A3B8",
     className: "bg-slate-700",
   },
 ];
@@ -77,7 +72,7 @@ export default function DesignSystem() {
   return (
     <section
       id="design-system"
-      className="bg-slate-50 py-28"
+      className="bg-slate-50 py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -88,7 +83,7 @@ export default function DesignSystem() {
             facilitar a escalabilidade do produto e, principalmente, oferecer
             uma experiência acessível para pessoas idosas."
         />
-  
+
 
         {/* Colors */}
 
@@ -159,7 +154,7 @@ export default function DesignSystem() {
                     </p>
                   </div>
 
-                  <span className="text-5xl font-bold text-slate-800">
+                  <span className="text-5xl font-bold text-slate-800" style={{ fontFamily: "Inter, sans-serif", fontSize: item.size.split(" / ")[0], fontWeight: item.size.split(" / ")[1].toLowerCase() }}>
                     {item.example}
                   </span>
                 </div>
@@ -181,42 +176,56 @@ export default function DesignSystem() {
 
           <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-3xl bg-slate-50 p-8 text-center">
-              <button className="rounded-2xl bg-emerald-600 px-8 py-4 font-semibold text-white">
+              <button className="rounded-2xl px-8 py-4 font-semibold text-white" style={{ backgroundColor: "#14B8A6" }}>
                 Botão Primário
               </button>
             </div>
 
             <div className="rounded-3xl bg-slate-50 p-8 text-center">
-              <button className="rounded-2xl border border-slate-300 bg-white px-8 py-4 font-semibold text-slate-700">
+              <button className="rounded-2xl px-8 py-4 font-semibold text-slate-700" style={{ backgroundColor: "#F0FDFA", borderColor: "#14B8A6", color: "#14B8A6" }}>
                 Botão Secundário
               </button>
             </div>
 
             <div className="rounded-3xl bg-slate-50 p-8">
-              <div className="rounded-2xl border border-slate-300 bg-white p-4">
-                <label className="text-sm text-slate-500">
-                  Pressão arterial
-                </label>
-
-                <input
-                  type="text"
-                  placeholder="120 / 80"
-                  className="mt-2 w-full border-none bg-transparent text-lg outline-none"
-                />
+              <div className="flex items-center justify-center">
+                <img src="\images\senior-health\card-pressao.png" alt="Campo de entrada" className="mx-auto" />
               </div>
             </div>
 
-            <div className="rounded-3xl bg-slate-50 p-8">
-              <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-                <h4 className="font-semibold text-slate-900">
-                  Card de informação
-                </h4>
-
-                <p className="mt-2 text-sm text-slate-500">
-                  Exemplo de componente reutilizável.
-                </p>
+            <div className="rounded-3xl bg-slate-50 p-2">
+              <div className="flex items-center justify-center h-32">
+                <img src="\images\senior-health\card_exames_agendados.png" alt="Campo de entrada" className="mx-auto" />
               </div>
             </div>
+
+            <div className="rounded-3xl bg-slate-50 p-2">
+              <div className="flex items-center justify-center h-32">
+                <img src="\images\senior-health\card_exames.png" alt="Campo de entrada" className="mx-auto" />
+              </div>
+            </div>
+
+
+            <div className="rounded-3xl bg-slate-50 p-2">
+              <div className="flex items-center justify-center h-32">
+                <img src="\images\senior-health\card_remedios.png" alt="Campo de entrada" className="mx-auto" />
+              </div>
+            </div>
+
+            <div className="rounded-3xl bg-slate-50 p-2">
+              <div className="flex items-center justify-center h-32">
+                <img src="\images\senior-health\card-contato.png" alt="Campo de entrada" className="mx-auto" />
+              </div>
+            </div>
+
+            <div className="rounded-3xl bg-slate-50 p-2">
+              <div className="flex items-center justify-center">
+                <img src="\images\senior-health\card-diario.png" alt="Campo de entrada" className="mx-auto" />
+              </div>
+            </div>
+
+
+
           </div>
         </div>
 

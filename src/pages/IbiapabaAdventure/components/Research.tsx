@@ -46,7 +46,7 @@ export default function Research() {
   return (
     <section
       id="research"
-      className="bg-white py-24"
+      className="bg-white py-24 px-20"
     >
       <div className="mx-auto container px-6">
 

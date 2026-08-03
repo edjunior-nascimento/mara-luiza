@@ -5,31 +5,31 @@ const Projects = () => {
   const navigation = useNavigate();
 
   const projects = [
+        {
+      title: "Cuidados com a Saúde do Idoso All-in-One",
+      description: "Desenvolver uma solução digital para auxiliar pessoas idosas no gerenciamento da saúde de forma simples, segura e acessível.",
+      image: "/images/senior-health/wirefrime.png",
+      tags: ["UX/UI Design", "Figma", "Design System", "Prototyping", "Responsive Design"],
+      onClick: () => navigation("/cuidados-saude"),
+    },
     {
       title: "ONG Proteção Animal",
       description: "Plataforma digital criada para facilitar doações e adoções, com QR Code PIX, catálogo filtrável de animais e dashboard interno para gestão da ONG.",
-      image: "/images/protecao_animal_main.png",
+      image: "/images/capa_protecao.png",
       tags: ["UX Research", "Figma", "Usability Testing", "Responsive Design", "Dashboard Design" ],
       onClick: () => navigation("/protecao-animal"),
     },
     {
       title: "Ibiapaba Adventure",
       description: "Plataforma digital de ecoturismo que organiza trilhas, hospedagens e guias locais",
-      image: "/images/ibiapaba_explore_main.png",
+      image: "/images/capa-ibiapaba.png",
       tags: ["UX Research", "Usability Testing", "Figma", "Responsive Design", "Product Design"],
       onClick: () => navigation("/ibiapaba-adventure"),
-    },
-    {
-      title: "Cuidados com a Saúde do Idoso All-in-One",
-      description: "Desenvolver uma solução digital para auxiliar pessoas idosas no gerenciamento da saúde de forma simples, segura e acessível.",
-      image: "/images/capa_xpzone.png",
-      tags: ["UX/UI Design", "Figma", "Design System", "Prototyping", "Responsive Design"],
-      onClick: () => navigation("/cuidados-saude"),
     }
   ];
 
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 px-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-300 bg-clip-text">

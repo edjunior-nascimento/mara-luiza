@@ -53,15 +53,10 @@ export default function App() {
             <Header />
             <Hero
                 estudo={{ icone: MapPinned, nome: "Estudo de Caso UX/UI" }}
-                imagem="/images/ibiapaba_explore_main.png"
+                imagem="/images/capa-ibiapaba.png"
                 titulo="Ibiapaba Adventure"
                 descricao="Plataforma digital criada para conectar turistas, guias e proprietários de campings da Serra da Ibiapaba, centralizando trilhas, reservas e informações em uma única experiência."
                 tags={["UX Strategy", "UX Research", "Design Thinking", "UX/UI Design", "Prototipação"]}
-                estatisticas={[
-                    { label: "Entrevistas", valor: "109+", icone: Users },
-                    { label: "Duração", valor: "4 semanas", icone: CalendarDays },
-                    { label: "Ferramentas", valor: "Figma • FigJam • Google Forms", icone: Wrench }
-                ]}
             />
             <Overview />
             <Research />

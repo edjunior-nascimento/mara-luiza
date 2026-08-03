@@ -3,6 +3,7 @@ import {
   LayoutPanelTop,
   Smartphone,
   Wand2,
+  ExternalLink,
 } from "lucide-react";
 import Topic from "../../../components/Topic";
 import { CoresEnum } from "../../../enums/Cores.Enum";
@@ -11,7 +12,7 @@ const wireframes = [
   {
     title: "Tela Inicial",
     description:
-      "Prioriza as tarefas do dia, mostrando lembretes, indicadores de saúde e acesso rápido às principais funcionalidades.",
+      "Prioriza as tarefas do dia, mostra indicadores de saúde e acesso rápido às principais funcionalidades.",
     image: "/images/senior-health/wireframe-home.png",
   },
   {
@@ -23,7 +24,7 @@ const wireframes = [
   {
     title: "Registro de Saúde",
     description:
-      "Formulário reduzido para registrar pressão arterial e glicemia rapidamente.",
+      "Tela simples para registrar pressão arterial/glicemia rapidamente.",
     image: "/images/senior-health/wireframe-health.png",
   },
   {
@@ -47,7 +48,7 @@ export default function Wireframes() {
   return (
     <section
       id="wireframes"
-      className="bg-white py-28"
+      className="bg-white py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -61,13 +62,13 @@ export default function Wireframes() {
 
         {/* Wireframes */}
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2">
+        <div className="mt-20 grid gap-2 md:grid-cols-4">
           {wireframes.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-[34px] border border-slate-200 bg-slate-50 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
+              className="overflow-hidden rounded-[34px] border border-slate-200 bg-lime-100 shadow-sm transition hover:-translate-y-2 hover:shadow-xl"
             >
-              <div className="aspect-[4/3] bg-white p-6">
+              <div className="aspect-[9/16] bg-white p-6">
                 <img
                   src={item.image}
                   alt={item.title}
@@ -75,7 +76,7 @@ export default function Wireframes() {
                 />
               </div>
 
-              <div className="p-8">
+              <div className="p-8 bg-lime-100">
                 <h3 className="text-2xl font-bold text-slate-900">
                   {item.title}
                 </h3>
@@ -86,6 +87,21 @@ export default function Wireframes() {
               </div>
             </article>
           ))}
+        </div>
+
+        {/* CTA */}
+
+        <div className="mt-10 flex justify-center">
+          <a
+            href="https://www.figma.com/design/ObqXLcFceuZuUB8kH7Zpd2/Cuidado-com-a-saude-de-idosos-All-in-one?node-id=150-2626&t=f5DKySyWsRw8G2Ob-1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 rounded-2xl bg-slate-900 px-8 py-4 font-medium text-white transition hover:bg-slate-800"
+          >
+            Abrir Wireframe Completono Figma
+
+            <ExternalLink size={18} />
+          </a>
         </div>
 
         {/* Design Decisions */}
@@ -125,25 +141,6 @@ export default function Wireframes() {
               ))}
             </ul>
           </div>
-        </div>
-
-        {/* Insight */}
-
-        <div className="mt-24 rounded-[40px] bg-gradient-to-r from-emerald-600 to-sky-600 p-12 text-white shadow-2xl">
-          <div className="flex items-center gap-3">
-            <Smartphone size={30} />
-
-            <h3 className="text-3xl font-bold">
-              Aprendizado desta etapa
-            </h3>
-          </div>
-
-          <p className="mt-8 max-w-5xl text-xl leading-9 text-emerald-50">
-            Trabalhar inicialmente com wireframes permitiu validar a experiência
-            antes do refinamento visual. Isso tornou o processo mais ágil,
-            reduziu retrabalho e garantiu que as decisões de interface fossem
-            guiadas pelas necessidades dos usuários, e não apenas pela estética.
-          </p>
         </div>
       </div>
     </section>

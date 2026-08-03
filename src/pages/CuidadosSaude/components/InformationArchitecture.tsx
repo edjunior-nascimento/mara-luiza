@@ -64,7 +64,7 @@ export default function InformationArchitecture() {
       id="information-architecture"
       className="bg-white py-28"
     >
-      <div className="mx-auto container px-6">
+      <div className="mx-auto container px-6 px-20">
         {/* Header */}
 
         <Topic

@@ -9,36 +9,36 @@ import { CoresEnum } from "../../../enums/Cores.Enum";
 
 const screens = [
   {
-    title: "Dashboard",
-    image: "/images/senior-health/dashboard.png",
+    title: "Início",
+    image: "/images/senior-health/alta_inicio.png",
   },
   {
     title: "Medicamentos",
-    image: "/images/senior-health/medications.png",
+    image: "/images/senior-health/alta_medicamentos.png",
   },
   {
     title: "Pressão Arterial",
-    image: "/images/senior-health/blood-pressure.png",
+    image: "/images/senior-health/alta_pressao.png",
   },
   {
     title: "Glicemia",
-    image: "/images/senior-health/glucose.png",
+    image: "/images/senior-health/alta_glicemia.png",
   },
   {
     title: "Plano Alimentar",
-    image: "/images/senior-health/diet.png",
+    image: "/images/senior-health/alta_plano_alimentar.png",
   },
   {
     title: "Exercícios",
-    image: "/images/senior-health/exercises.png",
+    image: "/images/senior-health/alta_exercicios.png",
   },
   {
     title: "Contato de Emergência",
-    image: "/images/senior-health/emergency.png",
+    image: "/images/senior-health/alta_emergencia.png",
   },
   {
     title: "Perfil",
-    image: "/images/senior-health/profile.png",
+    image: "/images/senior-health/alta_perfil.png",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function HighFidelity() {
   return (
     <section
       id="high-fidelity"
-      className="bg-white py-28"
+      className="bg-white py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -72,7 +72,7 @@ export default function HighFidelity() {
 
         <div className="mt-20 overflow-hidden rounded-[40px] border border-slate-200 bg-slate-50 p-8 shadow-xl">
           <img
-            src="/images/senior-health/high-fidelity-overview.png"
+            src="/images/capa-viva-bem.png"
             alt="Protótipo de alta fidelidade"
             className="w-full rounded-3xl"
           />

@@ -69,7 +69,7 @@ export default function UserFlow() {
   return (
     <section
       id="user-flow"
-      className="bg-slate-50 py-28"
+      className="bg-slate-50 py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -85,77 +85,10 @@ export default function UserFlow() {
 
         <div className="mt-20 rounded-[40px] border border-slate-200 bg-white p-10 shadow-lg">
           <div className="flex flex-col items-center gap-6 lg:flex-row lg:justify-between">
-            {flow.map((step, index) => {
-              const Icon = step.icon;
-
-              return (
-                <>
-                  <div
-                    key={step.title}
-                    className="flex max-w-[180px] flex-col items-center text-center"
-                  >
-                    <div
-                      className={`flex h-20 w-20 items-center justify-center rounded-3xl ${step.color}`}
-                    >
-                      <Icon size={36} />
-                    </div>
-
-                    <h3 className="mt-6 text-lg font-bold text-slate-900">
-                      {step.title}
-                    </h3>
-
-                    <p className="mt-3 text-sm leading-6 text-slate-600">
-                      {step.description}
-                    </p>
-                  </div>
-
-                  {index !== flow.length - 1 && (
-                    <>
-                      <ArrowRight
-                        className="hidden text-slate-300 lg:block"
-                        size={34}
-                      />
-
-                      <ArrowDown
-                        className="text-slate-300 lg:hidden"
-                        size={30}
-                      />
-                    </>
-                  )}
-                </>
-              );
-            })}
+            <img src="images/senior-health/userflow.png" alt="" />
           </div>
         </div>
-
-        {/* Cenário */}
-
-        <div className="mt-24 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-[36px] border border-emerald-200 bg-emerald-50 p-10">
-            <h3 className="text-2xl font-bold text-slate-900">
-              Cenário ideal
-            </h3>
-
-            <p className="mt-6 leading-8 text-slate-700">
-              O usuário recebe um lembrete, confirma o medicamento, registra os
-              indicadores de saúde e consulta sua rotina diária em menos de dois
-              minutos, sem precisar procurar informações em diferentes locais.
-            </p>
-          </div>
-
-          <div className="rounded-[36px] border border-sky-200 bg-sky-50 p-10">
-            <h3 className="text-2xl font-bold text-slate-900">
-              Objetivo do fluxo
-            </h3>
-
-            <p className="mt-6 leading-8 text-slate-700">
-              Reduzir o número de decisões durante a navegação, diminuir a carga
-              cognitiva e tornar as tarefas mais frequentes acessíveis com o
-              menor número possível de interações.
-            </p>
-          </div>
-        </div>
-
+        
         {/* Insight */}
 
         <div className="mt-24 rounded-[40px] bg-gradient-to-r from-indigo-600 to-sky-600 p-12 text-white shadow-2xl">

@@ -78,7 +78,7 @@ export default function EmpathyMap() {
       id="empathy-map"
       className="bg-white py-28"
     >
-      <div className="mx-auto container px-6">
+      <div className="mx-auto container px-6 px-20">
         {/* Header */}
         <Topic
           topico={{ icone: MessageCircle, nome: "Empathy Map", cor: CoresEnum.VIOLET }}

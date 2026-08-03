@@ -62,7 +62,7 @@ export default function Overview() {
   return (
     <section
       id="overview"
-      className="mx-auto container px-6 py-24"
+      className="mx-auto container px-20 py-24"
     >
       {/* Header */}
 

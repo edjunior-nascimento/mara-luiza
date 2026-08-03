@@ -25,7 +25,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white/30">
+    <section id="about" className="py-20 bg-white/30 px-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-blue-300 bg-clip-text ">
@@ -37,10 +37,10 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <div className="relative">
-              <div className="w-full h-96 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="w-full h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/pa_problematica_1.png"
-                  alt="Sofia trabalhando"
+                  src="/images/mara.jpg"
+                  alt="Mara trabalhando"
                   className="w-full h-full object-cover"
                 />
               </div>

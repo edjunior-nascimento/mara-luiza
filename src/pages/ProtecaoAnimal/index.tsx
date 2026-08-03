@@ -2,7 +2,9 @@ import Conclusion from "./components/Conclusion";
 import Header from "../../components/Header";
 import HighFidelity from "./components/HighFidelity";
 import Ideation from "./components/Ideation";
+import Persona from "./components/Persona";
 import Problems from "./components/Problems";
+import ProblemStatement from "./components/ProblemStatement";
 import Research from "./components/Research";
 import Sitemap from "./components/Sitemap";
 import Usability from "./components/Usability";
@@ -57,32 +59,29 @@ const links = [
 ];
 
 export default function App() {
-    //scroll to top on page load
-    window.scrollTo(0, 0);
-    return (
-        <div className="min-h-screen">
-            <Header />
-            <Hero 
-                estudo={
-                    { icone: Heart, nome: "Estudo de Caso UX/UI" }} 
-                imagem="/images/protecao_animal_main.png"
-                titulo="Proteção Animal"
-                descricao="Desenvolvimento de uma plataforma para facilitar adoções, arrecadações e gestão da ONG através de uma experiência mais intuitiva, transparente e centrada no usuário."
-                tags={["UX Strategy", "UX Research", "Design Thinking", "UX/UI Design", "Prototipação"]}
-                estatisticas={[
-                    { label: "Entrevistas", valor: "15+", icone: Users },
-                    { label: "Duração", valor: "5 semanas", icone: CalendarDays },
-                    { label: "Ferramentas", valor: "Figma • FigJam • Google Forms", icone: Wrench }
-                ]}
-            />
-            <Research />
-            <Problems />
-            <Ideation />
-            <Sitemap />
-            <HighFidelity />
-            <Usability />
-            <Conclusion />
-            <Links itens={links} />
-        </div>
-    );
+  //scroll to top on page load
+  window.scrollTo(0, 0);
+  return (
+    <div className="min-h-screen">
+      <Header />
+      <Hero
+        estudo={
+          { icone: Heart, nome: "Estudo de Caso UX/UI" }}
+        imagem="/images/capa-protecao-animal.png"
+        titulo="Proteção Animal"
+        descricao="Desenvolvimento de uma plataforma para facilitar adoções, arrecadações e gestão da ONG através de uma experiência mais intuitiva, transparente e centrada no usuário."
+        tags={["UX Strategy", "UX Research", "Design Thinking", "UX/UI Design", "Prototipação"]}
+      />
+      <Research />
+      <Problems />
+      <ProblemStatement />
+      <Persona />
+      <Ideation />
+      <Sitemap />
+      <HighFidelity />
+      <Usability />
+      <Conclusion />
+      <Links itens={links} />
+    </div>
+  );
 }

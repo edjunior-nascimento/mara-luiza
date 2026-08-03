@@ -29,7 +29,7 @@ export default function Prototype() {
   return (
     <section
       id="prototype"
-      className="bg-slate-50 py-28"
+      className="bg-slate-50 py-28 px-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}
@@ -49,7 +49,7 @@ export default function Prototype() {
           <div className="aspect-video">
             <iframe
               className="h-full w-full"
-              src="https://www.figma.com/embed?embed_host=share&url=SEU_LINK_DO_PROTOTIPO"
+              src="https://www.figma.com/design/ObqXLcFceuZuUB8kH7Zpd2/Cuidado-com-a-saude-de-idosos-All-in-one?node-id=0-1&t=fGy7ndrnj0HIZtQG-1"
               allowFullScreen
             />
           </div>
@@ -59,7 +59,7 @@ export default function Prototype() {
 
         <div className="mt-10 flex justify-center">
           <a
-            href="https://www.figma.com/proto/SEU_LINK_DO_PROTOTIPO"
+            href="https://www.figma.com/design/ObqXLcFceuZuUB8kH7Zpd2/Cuidado-com-a-saude-de-idosos-All-in-one?node-id=0-1&t=fGy7ndrnj0HIZtQG-1"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 rounded-2xl bg-slate-900 px-8 py-4 font-medium text-white transition hover:bg-slate-800"
@@ -91,25 +91,6 @@ export default function Prototype() {
               </p>
             </article>
           ))}
-        </div>
-
-        {/* Final */}
-
-        <div className="mt-24 rounded-[40px] bg-gradient-to-r from-violet-600 to-indigo-600 p-12 text-white shadow-2xl">
-          <div className="flex items-center gap-3">
-            <MousePointerClick size={30} />
-
-            <h3 className="text-3xl font-bold">
-              Navegue pelo protótipo
-            </h3>
-          </div>
-
-          <p className="mt-8 max-w-5xl text-xl leading-9 text-violet-50">
-            O protótipo representa a versão validada da solução proposta,
-            permitindo explorar todos os fluxos principais da experiência. Ele
-            foi utilizado para validar hipóteses, realizar testes de usabilidade
-            e comunicar a solução antes da etapa de desenvolvimento.
-          </p>
         </div>
       </div>
     </section>
