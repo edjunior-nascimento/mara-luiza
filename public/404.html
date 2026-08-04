@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <title>Redirecting...</title>
     <script type="text/javascript">
-      // Redireciona para index.html mantendo a rota original
-      var redirectUrl = window.location.protocol + "//" + window.location.host + "/index.html" + window.location.pathname + window.location.search;
+      // Redireciona para a raiz, preservando o caminho original
+      var pathname = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      var redirectUrl = "/" + pathname + search + hash;
       window.location.replace(redirectUrl);
     </script>
   </head>
