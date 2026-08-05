@@ -3,7 +3,7 @@ import TheChallenge from "./components/TheChallenge";
 import Research from "./components/Research";
 import ProjectOverview from "./components/ProjectOverview";
 import Hero from "../../components/Hero";
-import { FolderGit2, Globe, HeartPulse} from "lucide-react";
+import { Globe, HeartPulse} from "lucide-react";
 import Personas from "./components/Personas";
 import EmpathyMap from "./components/EmpathyMap";
 import Journey from "./components/Journey";
@@ -14,7 +14,6 @@ import UserFlow from "./components/UserFlow";
 import Wireframes from "./components/Wireframes";
 import DesignSystem from "./components/DesignSystem";
 import HighFidelity from "./components/HighFidelity";
-import Prototype from "./components/Prototype";
 import Usability from "./components/Usability";
 import Results from "./components/Results";
 import Reflection from "./components/Reflection";
@@ -67,7 +66,6 @@ export default function App() {
             <Wireframes />
             <DesignSystem />
             <HighFidelity />
-            <Prototype />
             <Usability />
             <Results />
             <Reflection />

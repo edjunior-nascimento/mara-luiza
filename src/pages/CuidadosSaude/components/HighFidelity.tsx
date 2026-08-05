@@ -1,5 +1,6 @@
 import {
   ArrowRight,
+  ExternalLink,
   MonitorSmartphone,
   Smartphone,
   Sparkles,
@@ -110,6 +111,19 @@ export default function HighFidelity() {
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <a
+              href="https://www.figma.com/design/ObqXLcFceuZuUB8kH7Zpd2/Cuidado-com-a-saude-de-idosos-All-in-one?node-id=0-1&t=fGy7ndrnj0HIZtQG-1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-2xl bg-slate-900 px-8 py-4 font-medium text-white transition hover:bg-slate-800"
+            >
+              Abrir protótipo no Figma
+
+              <ExternalLink size={18} />
+            </a>
           </div>
         </div>
 
