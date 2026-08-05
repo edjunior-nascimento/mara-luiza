@@ -62,9 +62,9 @@ export default function InformationArchitecture() {
   return (
     <section
       id="information-architecture"
-      className="bg-white py-28"
+      className="bg-white py-28 lg:p-20"
     >
-      <div className="mx-auto container px-6 px-20">
+      <div className="mx-auto container px-6 ">
         {/* Header */}
 
         <Topic

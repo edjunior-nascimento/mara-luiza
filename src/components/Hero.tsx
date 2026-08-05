@@ -1,6 +1,3 @@
-import {
-  ArrowDown,
-} from "lucide-react";
 
 interface HeroProps {
   estudo: {icone: any; nome: string;};
@@ -12,7 +9,7 @@ interface HeroProps {
 
 export default function Hero(heroProps: HeroProps) {
   return (
-    <section className={`relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50 px-20`}>
+    <section className={`relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-emerald-50 lg:p-20`}>
 
       {/* Background */}
 

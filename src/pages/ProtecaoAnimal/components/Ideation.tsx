@@ -31,7 +31,7 @@ const decisions = [
 
 export default function Ideation() {
   return (
-    <section className="mx-auto container px-6 py-24 px-20">
+    <section className="mx-auto container px-6 py-24 lg:p-20">
 
       {/* Header */}
 

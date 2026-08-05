@@ -64,9 +64,9 @@ export default function SolutionConcept() {
   return (
     <section
       id="solution-concept"
-      className="bg-white py-28"
+      className="bg-white py-28 lg:p-20"
     >
-      <div className="mx-auto container px-6 px-20">
+      <div className="mx-auto container px-6 ">
         {/* Header */}
 
         <Topic

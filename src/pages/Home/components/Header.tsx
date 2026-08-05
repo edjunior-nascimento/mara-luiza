@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 px-20 ${
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 lg:px-20 ${
       isScrolled ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-transparent'
     }`}>
       <nav className="container mx-auto px-6 py-4">

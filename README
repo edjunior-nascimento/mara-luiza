@@ -24,3 +24,11 @@ Ou, para rodar localmente:
 `cd portfolio-mara-luiza`
 
 ### Abra o arquivo index.html no seu navegador
+
+### Como realizar o Build e Deploy
+
+Ao realizar o git push, realize os seguintes comando no cmd para realizacao do Build e Deploy
+
+`npm run build`
+
+`npm run deploy`

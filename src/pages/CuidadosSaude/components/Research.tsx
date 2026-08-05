@@ -135,7 +135,7 @@ export default function Research() {
   return (
     <section
       id="research"
-      className="bg-slate-50 py-28 px-20"
+      className="bg-slate-50 py-28 lg:p-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

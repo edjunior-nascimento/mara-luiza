@@ -26,7 +26,7 @@ const nextSteps = [
 
 export default function Conclusion() {
   return (
-    <section className="mx-auto container px-20 py-24">
+    <section className="mx-auto container px-20 lg:p-20">
 
       {/* Header */}
 

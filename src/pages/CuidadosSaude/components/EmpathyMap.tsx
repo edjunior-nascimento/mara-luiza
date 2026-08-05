@@ -76,7 +76,7 @@ export default function EmpathyMap() {
   return (
     <section
       id="empathy-map"
-      className="bg-white py-28"
+      className="bg-white py-28 lg:p-20"
     >
       <div className="mx-auto container px-6 px-20">
         {/* Header */}

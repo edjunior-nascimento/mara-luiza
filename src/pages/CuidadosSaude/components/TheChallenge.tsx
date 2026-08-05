@@ -52,7 +52,7 @@ export default function TheChallenge() {
   return (
     <section
       id="challenge"
-      className="bg-white py-28 px-20"
+      className="bg-white py-28 lg:p-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

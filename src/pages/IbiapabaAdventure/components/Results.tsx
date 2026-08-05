@@ -78,7 +78,7 @@ export default function Results() {
   return (
     <section
       id="results"
-      className="bg-white py-28 px-20"
+      className="bg-white py-28 lg:p-20"
     >
       <div className="mx-auto container px-6">
         {/* Header */}

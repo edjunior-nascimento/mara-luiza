@@ -91,7 +91,7 @@ export default function DesignSystem() {
   return (
     <section
       id="design-system"
-      className="bg-slate-50 py-28 px-20"
+      className="bg-slate-50 py-28 lg:p-20"
     >
       <div className="mx-auto container px-6">
 

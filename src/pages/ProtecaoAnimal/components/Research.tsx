@@ -11,7 +11,7 @@ export default function Research() {
   return (
     <section
       id="pesquisa"
-      className="mx-auto container px-6 py-24 px-20"
+      className="mx-auto container px-6 py-24 lg:p-20"
     >
 
       <Topic 

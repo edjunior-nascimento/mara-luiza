@@ -4,7 +4,7 @@ import { CoresEnum } from "../../../enums/Cores.Enum";
 
 export default function ProblemStatement() {
   return (
-    <section className="mx-auto container px-6 py-24 px-20">
+    <section className="mx-auto container px-6 py-24 lg:p-20">
       <Topic 
         topico={{icone: HelpCircle, nome: "Problem Statement", cor: CoresEnum.VIOLET}}
         titulo="O Desafio Central"
