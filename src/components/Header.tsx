@@ -1,9 +1,13 @@
 import { useState, useEffect } from 'react';
 import { ChevronLeft, Menu, X } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+    const navigation = useNavigate();
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +32,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <button>
-            <ChevronLeft size={42} className="text-gray-700" onClick={() => window.history.back()} />
+            <ChevronLeft size={42} className="text-gray-700" onClick={() => navigation("/")} />
           </button>
           <img
             src={"/icons/logo.png"}

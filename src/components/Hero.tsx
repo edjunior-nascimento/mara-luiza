@@ -56,18 +56,6 @@ export default function Hero(heroProps: HeroProps) {
 
           </div>
 
-          {/* CTA */}
-
-          <a
-            href="#overview"
-            className="mt-12 inline-flex items-center gap-3 rounded-2xl bg-slate-900 px-7 py-4 font-medium text-white transition hover:bg-slate-800"
-          >
-            Ver estudo de caso
-
-            <ArrowDown size={18} />
-
-          </a>
-
         </div>
 
         {/* Imagem */}
