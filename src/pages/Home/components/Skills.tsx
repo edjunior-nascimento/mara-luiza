@@ -90,17 +90,6 @@ const Skills = () => {
       ]
     },
     {
-      title: "Ferramentas",
-      icon: <Wrench className="w-8 h-8" />,
-      description: "Domínio das principais ferramentas de design e prototipagem para criar soluções eficazes",
-      skills: [
-        { name: "Figma", level: 100, icon: <FaFigma className="w-5 h-5" /> },
-        { name: "FigJam", level: 100, icon: <FaFigma className="w-5 h-5" /> },
-        { name: "Miro", level: 100, icon: <SiMiro className="w-5 h-5" /> },
-        { name: "Google Forms", level: 75, icon: <SiGoogleforms className="w-5 h-5" /> }
-      ]
-    },
-    {
       title: "IA",
       icon: <SparklesIcon className="w-8 h-8" />,
       description: "Utilização de inteligência artificial para otimizar o processo de design e criar soluções inovadoras",
